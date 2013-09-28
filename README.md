@@ -15,6 +15,6 @@ Just some reminders on useful commands I'm still learning.
 ## Functions in .vimrc
 
 * Shell [any shell command] - shows output of command in new window
-* <tab><tab> - focus on next window
-* <C-n> - open new vertical window and focus on it
-* <C-h/j/k/l> - switch windows by direction
+* `<tab><tab>` - focus on next window
+* `<C-n>` - open new vertical window and focus on it
+* `<C-h/j/k/l>` - switch windows by direction
