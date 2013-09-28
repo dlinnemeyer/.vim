@@ -1,18 +1,23 @@
-Just some reminders on useful commands I'm still learning.
+## Installation
 
-## Basic Vim
+* clone this repo into ~/.vim with the --recursive flag (if you forget the flag, run git submodule update --init after cloning)
+* run ln -s ~/.vim/.vimrc ~/.vimrc
+
+## Reminders
+
+### Basic Vim
 
 *Need to fill this out*
 
-## Plugins
+### Plugins
 
-### ConqueTerm
+#### ConqueTerm
 
 * ConqueTermVSplit/cq/Cq/CQ [any program]
 * Csh - ConqueTermVSplit bash
 * Cmysql - ConqueTermVSplit mysql -p
 
-## Functions in .vimrc
+### Functions in .vimrc
 
 * Shell [any shell command] - shows output of command in new window
 * `<tab><tab>` - focus on next window
