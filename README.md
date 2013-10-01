@@ -8,6 +8,7 @@
 ### Basic Vim
 
 *Need to fill this out*
+* try :args to open new files, multiple at a time
 
 ### Plugins
 
