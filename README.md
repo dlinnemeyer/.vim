@@ -17,6 +17,10 @@
 * Csh - ConqueTermVSplit bash
 * Cmysql - ConqueTermVSplit mysql -p
 
+#### Vim Unimpaired
+
+A ton in here. Let's start with ]b and [b for :bn and :bp
+
 ### Functions in .vimrc
 
 * Shell [any shell command] - shows output of command in new window

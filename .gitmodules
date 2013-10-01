@@ -4,3 +4,6 @@
 [submodule "bundle/conque-term"]
 	path = bundle/conque-term
 	url = https://github.com/dhazel/conque-term.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
