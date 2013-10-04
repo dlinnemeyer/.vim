@@ -65,3 +65,11 @@ filetype plugin indent on
 " database settings for dbext
 let g:dbext_default_type   = 'MYSQL'
 let g:dbext_default_host = 'localhost'
+let g:dbext_default_user = 'dlinnemeyer'
+let g:dbext_default_window_use_horiz = 0 " Use vertical split
+let g:dbext_default_window_width = 80
+
+command Desc DescribeTableAskName
+command Sel Select
+command Sql DBExecSQL
+command SqlX DBExecSQLTopX

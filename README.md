@@ -22,6 +22,15 @@
 
 A ton in here. Let's start with ]b and [b for :bn and :bp
 
+#### DbExt
+
+:DBSetOption dbname=cc 
+
+:Sel/Select (finish typing the rest of a select statement to get results in new window)
+:Sql (type a sql command, get results)
+:SqlX (type a sql command, prompt for LIMIT, get results)
+:Desc (prompts for table name, displays describe results)
+
 ### Functions in .vimrc
 
 * Shell [any shell command] - shows output of command in new window
