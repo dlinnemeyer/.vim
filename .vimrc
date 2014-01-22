@@ -12,12 +12,22 @@ set laststatus=2
 
 " enable case-insensitive searching
 set ic
+" enable case-sensitive when uppercase letters show up in search phrase
+set smartcase
 
 " turn off hex/octal detection when dealing with numbers
 set nrformats=
 
 " setup bash-link tab-completion
-set wildmode=longest,list
+set wildignore+=*.a,*.o
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+set wildignore+=.DS_Store,.git,.hg,.svn
+set wildignore+=*~,*.swp,*.tmp
+set wildmode=longest,list:full
+
+" allow for finding files in any subdirectories by default. use with :find and
+" just type the file name, ignoring directories
+set path+=./**
 
 " window management
 nnoremap <C-n> <C-w>v<C-w>l
@@ -26,6 +36,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" %:h will input the current file's path, so :e %:h allows you to open another
+" file in the current directory. :e %% or :e% are shortcuts
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+cnoremap <expr> e% getcmdtype() == ':' ? expand('e %:h').'/' : 'e%'
 
 " command aliases
 cnoreabbrev Cq ConqueTermVSplit
