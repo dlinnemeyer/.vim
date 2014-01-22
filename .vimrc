@@ -23,7 +23,8 @@ set wildignore+=*.a,*.o
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
 set wildignore+=.DS_Store,.git,.hg,.svn
 set wildignore+=*~,*.swp,*.tmp
-set wildmode=longest,list:full
+set wildmenu
+set wildmode=list:longest,full
 
 " allow for finding files in any subdirectories by default. use with :find and
 " just type the file name, ignoring directories
