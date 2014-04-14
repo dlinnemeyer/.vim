@@ -7,3 +7,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-quickrun"]
+	path = bundle/vim-quickrun
+	url = https://github.com/thinca/vim-quickrun.git
