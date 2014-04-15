@@ -38,6 +38,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" alias for gc in visual mode
+vnoremap <silent> <C-C> gc
+
 " %:h will input the current file's path, so :e %:h allows you to open another
 " file in the current directory. :e %% or :e% are shortcuts
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -48,10 +51,12 @@ cnoreabbrev Cq ConqueTermVSplit
 cnoreabbrev cq ConqueTermVSplit
 cnoreabbrev CQ ConqueTermVSplit
 command Csh ConqueTermVSplit bash
+command Cshh ConqueTermSplit bash
 command Cmysql ConqueTermVSplit mysql -p
 
 " setup :Shell command to run passed shell command and display output in new window
 " take from: http://vim.wikia.com/wiki/Display_output_of_shell_commands_in_new_window
+" altered slightly to potentially switch back to originall window after running
 function! s:ExecuteInShell(command)
     let command = join(map(split(a:command), 'expand(v:val)'))
     let winnr = bufwinnr('^' . command . '$')
@@ -64,6 +69,8 @@ function! s:ExecuteInShell(command)
     silent! execute 'au BufUnload <buffer> execute bufwinnr(' . bufnr('#') . ') . ''wincmd w'''
     silent! execute 'nnoremap <silent> <buffer> <LocalLeader>r :call <SID>ExecuteInShell(''' . command . ''')<CR>'
     echo 'Shell command ' . command . ' executed.'
+    " switch to original window
+    " execute 'wincmd w'
 endfunction
 command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
 

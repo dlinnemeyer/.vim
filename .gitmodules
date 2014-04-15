@@ -10,3 +10,6 @@
 [submodule "bundle/vim-quickrun"]
 	path = bundle/vim-quickrun
 	url = https://github.com/thinca/vim-quickrun.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary
