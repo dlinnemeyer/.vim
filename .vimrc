@@ -1,9 +1,8 @@
 " tab stuff
+set autoindent
+set noexpandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
-set smarttab
-
 " show line numbers
 set number
 
