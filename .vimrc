@@ -53,6 +53,9 @@ command Csh ConqueTermVSplit bash
 command Cshh ConqueTermSplit bash
 command Cmysql ConqueTermVSplit mysql -p
 
+" short-code for :Explore
+command E Explore
+
 " setup :Shell command to run passed shell command and display output in new window
 " take from: http://vim.wikia.com/wiki/Display_output_of_shell_commands_in_new_window
 " altered slightly to potentially switch back to originall window after running
